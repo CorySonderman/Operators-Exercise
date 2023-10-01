@@ -63,11 +63,19 @@ namespace OperatorExercise
             var a = int.Parse(Console.ReadLine());
             Console.WriteLine("Now give me numero two!");
             var b = int.Parse(Console.ReadLine());
-            var quotient2 = a / b;
-            var remainder = a % b;
-            Console.WriteLine($"{a} / {b} = {quotient2} with a remainder of" +
-            $" {remainder}.");
-            Console.WriteLine();    
+            if (a < b)
+            {
+                Console.WriteLine("You Cheated!!!");
+            }
+            else
+            {
+                var quotient2 = a / b;
+                var remainder = a % b;
+                Console.WriteLine($"{a} / {b} = {quotient2} with a remainder of" +
+                $" {remainder}.");
+                Console.WriteLine();
+            }
+             
 
             Console.WriteLine("Feeling big brained yet?  All this practice sure is" +
             " making me smarter. Thanks!");
